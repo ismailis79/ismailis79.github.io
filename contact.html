@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header-bar">
+        <div class="site-name">
+            <a href="index.html">Steven Ismaili</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="courses.html">Courses</a>
+            <a href="projects.html">Projects</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div class="contact-section">
+
+        <h1>Contact Me</h1>
+
+        <p>You can reach me through any of the following:</p>
+
+        <ul class="contact-methods">
+            <li><strong>Email:</strong> srijr05@gmail.com</li>
+            <li><strong>LinkedIn:</strong> 
+                <a href="https://www.linkedin.com/in/steven-ismaili-499879218/" target="_blank">
+                    linkedin.com/in/steven-ismaili
+                </a>
+            </li>
+            <li><strong>GitHub:</strong> 
+                <a href="https://github.com/ismailis79/ismailis79.github.io" target="_blank">
+                    github.com/ismailis79
+                </a>
+            </li>
+        </ul>
+
+        <hr>
+
+        <h2>Send Me a Message</h2>
+
+        <form action="mailto:srijr05@gmail.com" method="POST" enctype="text/plain">
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="Name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="Email" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="Subject">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="Message" rows="5" required></textarea>
+
+            <button type="submit" class="contact-button">Send Message</button>
+
+        </form>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Steven Ismaili</p>
+        <p>
+            <a href="https://www.linkedin.com/in/steven-ismaili-499879218/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/ismailis79/ismailis79.github.io" target="_blank">GitHub</a> |
+            <a href="mailto:srijr05@gmail.com">Email</a>
+        </p>
+    </footer>
+
+</body>
+</html>

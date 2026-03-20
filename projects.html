@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header-bar">
+        <div class="site-name">
+            <a href="index.html">Steven Ismaili</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="courses.html">Courses</a>
+            <a href="projects.html">Projects</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+
+    <div class="courses-section">
+
+        <h1>Projects</h1>
+
+        <h2>C++ Graph Algorithm Program - CSC 2710</h2>
+        <p>
+        This project demonstrates my ability to work with graph-based data structures
+        and algorithms in C++. The program processes graph data and analyzes paths
+        between nodes while focusing on efficiency and algorithmic design. Through
+        this project I strengthened my understanding of structured programming,
+        algorithm implementation, and memory management in C++. This work reflects
+        the types of computational problem-solving techniques commonly used in
+        software engineering and systems development.
+        </p>
+
+        <p>
+            <a href="project_main.cpp" download class="resume-button">Download Project</a>
+        </p>
+
+
+        <h2>Dijkstra's Shortest Path Algorithm - CSC 2710</h2>
+        <p>
+        This project implements Dijkstra's algorithm in C++ to calculate the shortest
+        path between nodes in a weighted graph. The program determines the minimum
+        distance from a starting vertex to all other vertices using a greedy algorithm
+        approach. This project highlights my understanding of graph traversal,
+        algorithm optimization, and problem-solving using C++. Algorithms like
+        Dijkstra's are widely used in networking, GPS routing, and many real-world
+        pathfinding systems.
+        </p>
+
+        <p>
+            <a href="dikstra.cpp" download class="resume-button">Download Code</a>
+        </p>
+
+
+        <h2>Python Murder Mystery Game</h2>
+        <div class="carousel">
+
+            <button class="carousel-btn prev" onclick="changeSlide(-1)">❮</button>
+            
+            <img id="carousel-image" src="images/murder1.png" alt="Murder Mystery Game Screenshot">
+            
+            <button class="carousel-btn next" onclick="changeSlide(1)">❯</button>
+            
+        </div>
+        <p>
+            This project is a 2D murder mystery detective game built in Python using the Pygame library. 
+            The player explores a pixel-art mansion, moves through hallways and rooms, and interacts with 
+            different suspects to gather clues about a murder. Each character has a unique role, and the 
+            player must investigate dialogue, examine evidence, and analyze clues before making a final 
+            decision about who committed the crime. The game uses sprite rendering, keyboard input, and 
+            event-driven programming to control player movement, interactions, and dialogue prompts. 
+            This project demonstrates my ability to build interactive graphical applications while applying 
+            core programming concepts such as game loops, conditional logic, event handling, and user interaction.
+        </p>
+
+        <p>
+            <a href="murderGame.py" download class="resume-button">Download Game</a>
+        </p>
+
+        <a href="https://codehs.com/sandbox/id/new-sandbox-program-nREB2M/run" target="_blank" class="resume-button">
+            Play on CodeHS
+        </a>
+
+    </div>
+
+
+    <footer>
+        <p>&copy; 2026 Steven Ismaili</p>
+        <p>
+            <a href="https://www.linkedin.com/in/steven-ismaili-499879218/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/ismailis79/ismailis79.github.io" target="_blank">GitHub</a> |
+            <a href="mailto:srijr05@gmail.com">Email</a>
+        </p>
+    </footer>
+    <script>
+        const images = [
+        "images/murder1.png",
+        "images/murder2.png",
+        "images/murder3.png",
+        "images/murder4.png"
+        ];
+        
+        let currentIndex = 0;
+        
+        function changeSlide(direction){
+        currentIndex += direction;
+        
+        if(currentIndex < 0){
+        currentIndex = images.length - 1;
+        }
+        
+        if(currentIndex >= images.length){
+        currentIndex = 0;
+        }
+        
+        document.getElementById("carousel-image").src = images[currentIndex];
+        }
+    </script>
+</body>
+</html>
